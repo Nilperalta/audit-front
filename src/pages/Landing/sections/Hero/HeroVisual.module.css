@@ -1,0 +1,47 @@
+.card {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 320px;
+  border-radius: var(--radius-lg);
+  background: #f1f3f4;
+  box-shadow: var(--shadow-md);
+}
+
+.phones {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  transform: rotate(-12deg);
+}
+
+.phone {
+  width: 84px;
+  height: 170px;
+  border: 3px solid var(--color-primary-200);
+  border-radius: 18px;
+  background: #fff;
+}
+.center { height: 190px; border-color: var(--color-primary-500); }
+
+.badge {
+  position: absolute;
+  right: var(--space-4);
+  bottom: calc(var(--space-3) * -1);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-pill);
+  background: #fff;
+  box-shadow: var(--shadow-md);
+  font-size: var(--text-xs);
+  font-weight: 500;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-success);
+}

@@ -1,0 +1,73 @@
+/* ==========================================================================
+   TOKENS DE DISEÑO — única fuente de verdad de colores, tipografía y medidas.
+   Valores tomados del sistema "Audit & Compliance Design System" (Stitch).
+   Si cambias algo en Stitch, cámbialo SOLO aquí.
+   ========================================================================== */
+:root {
+  /* Primario (rosa) — semilla #E91E63 */
+  --color-primary-50: #fce4ec;
+  --color-primary-100: #f8bbd0;
+  --color-primary-200: #f48fb1;
+  --color-primary-300: #f06292;
+  --color-primary-400: #ec407a;
+  --color-primary-500: #e91e63;
+  --color-primary-600: #d81b60;
+  --color-primary-700: #c2185b;
+  --color-primary-800: #ad1457;
+  --color-primary-900: #880e4f;
+  --color-primary: var(--color-primary-500);
+  --color-primary-hover: var(--color-primary-700);
+
+  /* Secundario (casi negro) */
+  --color-secondary: #212121;
+  /* Terciario (gris) */
+  --color-tertiary: #757575;
+  /* Neutro (fondo de secciones alternas) */
+  --color-neutral: #f8f9fa;
+
+  /* Semánticos de uso diario */
+  --color-bg: #ffffff;
+  --color-bg-alt: var(--color-neutral);
+  --color-text: var(--color-secondary);
+  --color-text-muted: #616161;
+  --color-border: #e8e8ec;
+  --color-success: #22c55e;
+  --color-danger: #c62828;
+
+  /* Tipografía */
+  --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: clamp(1.0625rem, 1.2vw, 1.25rem);
+  --text-h3: clamp(1.125rem, 1.6vw, 1.5rem);
+  --text-h2: clamp(1.5rem, 3.2vw, 2.5rem);
+  --text-h1: clamp(2.25rem, 5vw, 3.5rem);
+
+  /* Espaciado (escala de 4px) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+
+  /* Bordes y sombras */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 1px 2px rgba(33, 33, 33, 0.06);
+  --shadow-md: 0 8px 24px rgba(33, 33, 33, 0.08);
+  --shadow-primary: 0 8px 20px rgba(233, 30, 99, 0.25);
+
+  /* Layout */
+  --container-max: 1200px;
+  --header-height: 64px;
+  --z-header: 100;
+}

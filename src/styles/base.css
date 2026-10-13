@@ -1,0 +1,81 @@
+/* Reset mínimo y estilos base. Nada específico de una página aquí. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: var(--font-heading);
+  color: var(--color-text);
+}
+
+h1 { font-size: var(--text-h1); line-height: 1.1; font-weight: 800; letter-spacing: -0.02em; }
+h2 { font-size: var(--text-h2); line-height: 1.2; font-weight: 700; letter-spacing: -0.01em; }
+h3 { font-size: var(--text-h3); line-height: 1.3; font-weight: 600; }
+
+p { 
+  margin: 0; 
+}
+
+a { 
+  color: inherit; 
+  text-decoration: none; 
+}
+
+img, svg { 
+  display: block; 
+  max-width: 100%; 
+}
+
+ul { 
+  margin: 0; 
+  padding: 0; 
+  list-style: none; 
+}
+
+button { 
+  font: inherit; 
+  cursor: pointer; 
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
