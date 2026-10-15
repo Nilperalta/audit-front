@@ -3,7 +3,7 @@ import Features from './sections/Features';
 import WhyAudit from './sections/WhyAudit';
 // Cada compañero agrega su sección aquí (ver sections/README.md):
 import Faq from './sections/Faq';
-// import FinalCta from './sections/FinalCta';
+import FinalCta from './sections/FinalCta';
 
 export default function LandingPage() {
   return (
@@ -12,7 +12,7 @@ export default function LandingPage() {
       <Features />
       <WhyAudit />
       <Faq />
-      {/* <FinalCta /> */}
+      <FinalCta />
     </>
   );
 }

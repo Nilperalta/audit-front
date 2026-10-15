@@ -141,3 +141,11 @@ export const faqContent = {
     },
   ],
 };
+
+export const finalCtaContent = {
+  eyebrow: 'Comienza hoy',
+  title: '¿Listo para ordenar tus auditorías?',
+  description:
+    'Únete a cientos de equipos de calidad que ya trabajan de forma más ágil, eficiente y conectada con Audit.',
+  cta: { label: 'Solicitar acceso', to: PATHS.REQUEST_ACCESS },
+};
