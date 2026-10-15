@@ -1,0 +1,161 @@
+.section {
+  padding-block: var(--space-9);
+  background: var(--color-bg);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-7);
+  align-items: center;
+}
+
+.visual {
+  position: relative;
+  width: 100%;
+  max-width: 32rem;
+  margin-inline: auto;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.badge {
+  position: absolute;
+  right: var(--space-3);
+  bottom: calc(var(--space-3) * -1);
+
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+
+  padding: var(--space-2) var(--space-3);
+
+  color: var(--color-text-muted);
+  background: var(--color-bg);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+
+  box-shadow: var(--shadow-sm);
+
+  font-size: var(--text-xs);
+  font-weight: 500;
+}
+
+.badgeDot {
+  width: 8px;
+  height: 8px;
+
+  flex-shrink: 0;
+
+  background: var(--color-success);
+  border-radius: var(--radius-pill);
+}
+
+.content {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.header {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.eyebrow {
+  color: var(--color-primary-600);
+
+  font-size: var(--text-xs);
+  font-weight: 600;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.title {
+  max-width: 34rem;
+
+  color: var(--color-text);
+
+  font-family: var(--font-heading);
+  font-size: var(--text-h2);
+  font-weight: 700;
+  line-height: 1.08;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.benefit {
+  min-height: 10.5rem;
+
+  padding: var(--space-4);
+
+  background: var(--color-bg);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  box-shadow: var(--shadow-sm);
+}
+
+.iconBox {
+  display: grid;
+  place-items: center;
+
+  width: 36px;
+  height: 36px;
+
+  margin-bottom: var(--space-3);
+
+  color: var(--color-primary);
+  background: var(--color-primary-50);
+
+  border-radius: var(--radius-sm);
+}
+
+.benefitTitle {
+  margin-bottom: var(--space-2);
+
+  color: var(--color-text);
+
+  font-family: var(--font-heading);
+  font-size: var(--text-base);
+  font-weight: 700;
+}
+
+.benefitDescription {
+  color: var(--color-text-muted);
+
+  font-size: var(--text-sm);
+  line-height: 1.55;
+}
+
+/* Tablet */
+@media (min-width: 640px) {
+  .benefits {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Escritorio */
+@media (min-width: 900px) {
+  .layout {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.25fr);
+    gap: var(--space-7);
+  }
+
+  .visual {
+    margin-inline: 0;
+  }
+}

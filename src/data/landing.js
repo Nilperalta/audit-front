@@ -70,3 +70,36 @@ export const featuresContent = {
     },
   ],
 };
+
+export const whyAuditContent = {
+  eyebrow: '¿Por qué elegir Audit?',
+  title: 'Tu equipo de auditoría, siempre a la mano',
+  imageAlt: 'Aplicación Audit mostrada en tres dispositivos móviles',
+  badge: 'App 100% nativa',
+  benefits: [
+    {
+      icon: 'mobile',
+      title: '100% móvil',
+      description:
+        'Diseñada exclusivamente para auditores en terreno. Cero formularios en papel y sin complicaciones de sincronización.',
+    },
+    {
+      icon: 'speed',
+      title: 'Más velocidad',
+      description:
+        'Información y métricas procesadas en tiempo real para tomar decisiones correctivas al instante.',
+    },
+    {
+      icon: 'roles',
+      title: 'Para todos los roles',
+      description:
+        'Auditores, supervisores de planta y gerentes de calidad colaborando dentro del mismo ecosistema de permisos.',
+    },
+    {
+      icon: 'traceability',
+      title: 'Trazabilidad completa',
+      description:
+        'Historial inmutable, marcas de tiempo, firmas digitales y fotos fechadas con geolocalización.',
+    },
+  ],
+};
