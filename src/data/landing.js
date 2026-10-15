@@ -103,3 +103,102 @@ export const whyAuditContent = {
     },
   ],
 };
+
+export const faqContent = {
+  eyebrow: 'Preguntas frecuentes',
+  title: 'Resolvemos tus dudas',
+  description:
+    'Todo lo que necesitas saber antes de implementar Audit en tus centros de trabajo.',
+  items: [
+    {
+      question: '¿Audit funciona sin conexión a internet?',
+      answer:
+        'Sí. Puedes ejecutar checklists y registrar evidencias sin cobertura. Los cambios se sincronizan cuando recuperas la conexión.',
+    },
+    {
+      question: '¿Mis datos están seguros?',
+      answer:
+        'Cada empresa se valida antes de activarse y cada usuario ingresa con su propia cuenta y rol. Solo accedes a la información de tu empresa.',
+    },
+    {
+      question: '¿Cómo se asignan los roles y permisos?',
+      answer:
+        'El Auditor Admin programa auditorías, arma los equipos y asigna tareas. El Auditor Regular ejecuta los checklists que se le asignan.',
+    },
+    {
+      question: '¿Qué dispositivos son compatibles?',
+      answer:
+        'Funciona desde el navegador de celulares, tablets y computadoras, y puedes instalarla en la pantalla de inicio como una app.',
+    },
+    {
+      question: '¿Puedo personalizar mis checklists?',
+      answer:
+        'Sí. Puedes usar checklists basados en ISO 9001, ISO 14001, ISO 45001, GlobalGAP, FSMA y BRCGS, adaptados a tu empresa.',
+    },
+    {
+      question: '¿Puedo exportar reportes ejecutivos?',
+      answer: 'Sí. Cada auditoría genera un informe que puedes descargar en PDF, Excel o Word.',
+    },
+  ],
+};
+
+export const finalCtaContent = {
+  eyebrow: 'Comienza hoy',
+  title: '¿Listo para ordenar tus auditorías?',
+  description:
+    'Únete a cientos de equipos de calidad que ya trabajan de forma más ágil, eficiente y conectada con Audit.',
+  cta: { label: 'Solicitar acceso', to: PATHS.REQUEST_ACCESS },
+};
+
+/*
+ * Footer. Se muestra en todas las páginas públicas (MainLayout), por eso los
+ * enlaces a secciones usan "/#id": desde /iniciar-sesion también llevan al landing.
+ * Los "#" son páginas que aún no existen.
+ */
+export const footerContent = {
+  description:
+    'Auditorías inteligentes desde tu celular. La plataforma móvil definitiva para el control y la gestión ágil de inspecciones.',
+  columns: [
+    {
+      title: 'Producto',
+      links: [
+        { label: 'Características', href: '/#caracteristicas' },
+        { label: 'Cómo funciona', href: '/#como-funciona' },
+        { label: 'Seguridad', href: '/#seguridad' },
+        { label: 'Integraciones', href: '#' },
+      ],
+    },
+    {
+      title: 'Compañía',
+      links: [
+        { label: 'Nosotros', href: '#' },
+        { label: 'Blog', href: '#' },
+        { label: 'Empleos', href: '#' },
+        { label: 'Contacto', href: '#' },
+      ],
+    },
+    {
+      title: 'Recursos',
+      links: [
+        { label: 'Centro de ayuda', href: '#' },
+        { label: 'Plantillas', href: '#' },
+        { label: 'Novedades', href: '#' },
+        { label: 'Estado del sistema', href: '#' },
+      ],
+    },
+  ],
+  contact: {
+    title: 'Contáctanos',
+    items: [
+      { icon: 'mail', label: 'hola@audit.app', href: 'mailto:hola@audit.app' },
+      { icon: 'phone', label: '+52 55 1234 5678', href: 'tel:+525512345678' },
+    ],
+  },
+  copyright: 'Audit Inc. Todos los derechos reservados.',
+  socialLabel: 'Síguenos',
+  social: [
+    { icon: 'linkedin', label: 'LinkedIn', href: '#' },
+    { icon: 'youtube', label: 'YouTube', href: '#' },
+    { icon: 'instagram', label: 'Instagram', href: '#' },
+  ],
+};
