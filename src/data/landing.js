@@ -103,3 +103,41 @@ export const whyAuditContent = {
     },
   ],
 };
+
+export const faqContent = {
+  eyebrow: 'Preguntas frecuentes',
+  title: 'Resolvemos tus dudas',
+  description:
+    'Todo lo que necesitas saber antes de implementar Audit en tus centros de trabajo.',
+  items: [
+    {
+      question: '¿Audit funciona sin conexión a internet?',
+      answer:
+        'Sí. Puedes ejecutar checklists y registrar evidencias sin cobertura. Los cambios se sincronizan cuando recuperas la conexión.',
+    },
+    {
+      question: '¿Mis datos están seguros?',
+      answer:
+        'Cada empresa se valida antes de activarse y cada usuario ingresa con su propia cuenta y rol. Solo accedes a la información de tu empresa.',
+    },
+    {
+      question: '¿Cómo se asignan los roles y permisos?',
+      answer:
+        'El Auditor Admin programa auditorías, arma los equipos y asigna tareas. El Auditor Regular ejecuta los checklists que se le asignan.',
+    },
+    {
+      question: '¿Qué dispositivos son compatibles?',
+      answer:
+        'Funciona desde el navegador de celulares, tablets y computadoras, y puedes instalarla en la pantalla de inicio como una app.',
+    },
+    {
+      question: '¿Puedo personalizar mis checklists?',
+      answer:
+        'Sí. Puedes usar checklists basados en ISO 9001, ISO 14001, ISO 45001, GlobalGAP, FSMA y BRCGS, adaptados a tu empresa.',
+    },
+    {
+      question: '¿Puedo exportar reportes ejecutivos?',
+      answer: 'Sí. Cada auditoría genera un informe que puedes descargar en PDF, Excel o Word.',
+    },
+  ],
+};
