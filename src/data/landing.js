@@ -33,3 +33,73 @@ export const heroContent = {
     { icon: 'shield', title: 'Seguro y confiable', text: 'Protección total' },
   ],
 };
+
+export const featuresContent = {
+  eyebrow: 'Características principales',
+  title: 'Todo lo que necesitas para auditar',
+  description:
+    'Digitaliza todo tu flujo de calidad y cumplimiento con una interfaz pensada para el trabajo de campo.',
+  items: [
+    {
+      icon: 'calendar',
+      title: 'Programa auditorías',
+      description:
+        'Crea planes, asigna responsables y agenda auditorías en cuestión de segundos.',
+      linkLabel: 'Calendario inteligente →',
+    },
+    {
+      icon: 'checklist',
+      title: 'Ejecuta checklists',
+      description:
+        'Responde desde tu celular con checklists personalizados adaptados a tus normativas.',
+      linkLabel: 'Flujos dinámicos →',
+    },
+    {
+      icon: 'evidence',
+      title: 'Gestiona evidencias',
+      description:
+        'Captura fotos, documentos y notas al instante. Todo queda centralizado y respaldado.',
+      linkLabel: 'Respaldo en nube →',
+    },
+    {
+      icon: 'flag',
+      title: 'Seguimiento a hallazgos',
+      description:
+        'Asigna acciones correctivas, define plazos y verifica el cierre con total trazabilidad.',
+      linkLabel: 'Cierre de ciclos →',
+    },
+  ],
+};
+
+export const whyAuditContent = {
+  eyebrow: '¿Por qué elegir Audit?',
+  title: 'Tu equipo de auditoría, siempre a la mano',
+  imageAlt: 'Aplicación Audit mostrada en tres dispositivos móviles',
+  badge: 'App 100% nativa',
+  benefits: [
+    {
+      icon: 'mobile',
+      title: '100% móvil',
+      description:
+        'Diseñada exclusivamente para auditores en terreno. Cero formularios en papel y sin complicaciones de sincronización.',
+    },
+    {
+      icon: 'speed',
+      title: 'Más velocidad',
+      description:
+        'Información y métricas procesadas en tiempo real para tomar decisiones correctivas al instante.',
+    },
+    {
+      icon: 'roles',
+      title: 'Para todos los roles',
+      description:
+        'Auditores, supervisores de planta y gerentes de calidad colaborando dentro del mismo ecosistema de permisos.',
+    },
+    {
+      icon: 'traceability',
+      title: 'Trazabilidad completa',
+      description:
+        'Historial inmutable, marcas de tiempo, firmas digitales y fotos fechadas con geolocalización.',
+    },
+  ],
+};
