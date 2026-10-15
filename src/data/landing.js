@@ -149,3 +149,56 @@ export const finalCtaContent = {
     'Únete a cientos de equipos de calidad que ya trabajan de forma más ágil, eficiente y conectada con Audit.',
   cta: { label: 'Solicitar acceso', to: PATHS.REQUEST_ACCESS },
 };
+
+/*
+ * Footer. Se muestra en todas las páginas públicas (MainLayout), por eso los
+ * enlaces a secciones usan "/#id": desde /iniciar-sesion también llevan al landing.
+ * Los "#" son páginas que aún no existen.
+ */
+export const footerContent = {
+  description:
+    'Auditorías inteligentes desde tu celular. La plataforma móvil definitiva para el control y la gestión ágil de inspecciones.',
+  columns: [
+    {
+      title: 'Producto',
+      links: [
+        { label: 'Características', href: '/#caracteristicas' },
+        { label: 'Cómo funciona', href: '/#como-funciona' },
+        { label: 'Seguridad', href: '/#seguridad' },
+        { label: 'Integraciones', href: '#' },
+      ],
+    },
+    {
+      title: 'Compañía',
+      links: [
+        { label: 'Nosotros', href: '#' },
+        { label: 'Blog', href: '#' },
+        { label: 'Empleos', href: '#' },
+        { label: 'Contacto', href: '#' },
+      ],
+    },
+    {
+      title: 'Recursos',
+      links: [
+        { label: 'Centro de ayuda', href: '#' },
+        { label: 'Plantillas', href: '#' },
+        { label: 'Novedades', href: '#' },
+        { label: 'Estado del sistema', href: '#' },
+      ],
+    },
+  ],
+  contact: {
+    title: 'Contáctanos',
+    items: [
+      { icon: 'mail', label: 'hola@audit.app', href: 'mailto:hola@audit.app' },
+      { icon: 'phone', label: '+52 55 1234 5678', href: 'tel:+525512345678' },
+    ],
+  },
+  copyright: 'Audit Inc. Todos los derechos reservados.',
+  socialLabel: 'Síguenos',
+  social: [
+    { icon: 'linkedin', label: 'LinkedIn', href: '#' },
+    { icon: 'youtube', label: 'YouTube', href: '#' },
+    { icon: 'instagram', label: 'Instagram', href: '#' },
+  ],
+};
